@@ -453,16 +453,17 @@ p{
         }
 
         .custom-interest-form ::placeholder{
-            color:#000; 
+            color:#717070; 
             text-transform:uppercase;
             font-size: 13px;
-            padding: 5px;
+            padding: 1px;
         }
 
         input[type="text"]{
             width: 50%;
             background:#fff; 
             height:50px; 
+            padding: 10px;
             color:#000; 
             margin-bottom:15px;
             font-size: 13px;
@@ -474,6 +475,7 @@ p{
        
         input[type="text"]{
             width: 50%;
+            padding: 10px;
             background:#fff; 
             height:50px; 
             color:#000; 
@@ -483,6 +485,7 @@ p{
 
         input[type="text"]{
             width: 100%;
+            padding: 10px;
             background:#fff; 
             height:50px; 
             color:#000; 
@@ -502,6 +505,7 @@ p{
             background:#fff; 
             height:50px; 
             color:#000;
+            padding: 10px;
              margin-bottom:15px;
              font-size: 13px;
              outline: 0;
@@ -589,7 +593,6 @@ p{
         object-position: center;
         @media (max-width:768px){
             height: 100%;
-           
          }
     }
     .caption{
@@ -597,6 +600,7 @@ p{
         position: absolute;
         top: 50%;
         left: 50%;
+        padding: 0 40px;
         transform: translate(-50%, -50%);
         @media (max-width:768px){
             bottom: 30%;
