@@ -15,9 +15,17 @@ h2{
     font-family: 'lufgaregular';
 }
 
+b{
+    font-family: 'lufgasemibold';
+}
+
 h3{
     font-family: 'lufgaregular';
     font-size: 25px;
+}
+
+.box_p{
+    font-size: 12px;
 }
 
 h4{
@@ -161,8 +169,8 @@ p{
                 order: 1;
                 @media (max-width:768px){
                 order: 2;
-                width: 60%;
-                text-align: center;
+                width: 100%;
+                text-align: left;
                 }
                 img{
                     width: 137px;
@@ -176,7 +184,7 @@ p{
                 order: 2;
                 @media (max-width:768px){
                     order: 1;
-                    width: 20%;
+                    width: 5%;
                     text-align: left;
                 }
                 .wsmenu>.wsmenu-list>li>a{
@@ -233,24 +241,25 @@ p{
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    background-image: url(../images/bg-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 30px;
+    background-size: cover;
     @media (max-width:950px){
         padding-top: 53px;
-     }
+        margin-top: 0px;
+    }
     @media (max-width:768px){
+        background-image: none;
+        background: url(../images/bg-1a.jpg);
         padding-top: 13px;
+        height:100vh ;
+        background-position: inherit;
 
     }
 
-    img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-        @media (max-width:768px){
-            height: 100%;
-           
-         }
-    }
+   
     .caption{
         text-align: center;
         position: absolute;
@@ -258,7 +267,8 @@ p{
         left: 50%;
         transform: translate(-50%, -50%);
         @media (max-width:768px){
-            bottom: 10%;
+            bottom: 0%;
+            padding: 0 20px;
         }
         h1{
             color: #fff;
@@ -270,7 +280,7 @@ p{
             }
 
             @media (max-width:768px){
-                font-size: 40px;
+                font-size: 30px;
             }
         }
 
@@ -280,6 +290,9 @@ p{
             font-weight: 300;
             @media (max-width:1366px){
                 font-size: 18px;
+            }
+            @media (max-width:767px){
+                font-size: 14px;
             }
 
         }
@@ -301,20 +314,13 @@ p{
             }
 
             @media (max-width:768px){
-                font-size: 10px;
+                font-size: 17px;
                 padding: 20px;
-                margin: 0 5px;
+                margin: 0 ;
+                width: 100% ;
+                display: block;
              }
-             @media (max-width:400px){
-                font-size: 10px;
-                padding: 15px;
-                margin: 0 5px;
-             }
-
-             @media (max-width:300px){
-                font-size: 10px;
-                padding: 15px 45px;
-             }
+             
              
             
         }
@@ -323,12 +329,52 @@ p{
 }
 
 
+.difc_banner_inner{
+    position: relative;
+    @media (max-width:768px){
+        height: 300px;
+     }
+     img{
+        max-width: 100%;
+        @media (max-width:768px){
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: right;
+         }
+    }
+    .caption{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        @media (max-width:768px){
+           padding: 20px;
+        }
+
+        h2{
+            color: #fff;
+            font-size:40px;
+            font-weight: 400;
+            @media (max-width:1366px){
+                font-size: 30px;
+            }
+
+            @media (max-width:768px){
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+
 
 .difc_banner_step_2{
     padding: 150px 0;
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
     background-image: url(../images/banner-1.jpg);
     background-position: center;
@@ -343,9 +389,11 @@ p{
     }
     @media (max-width:950px){
         padding-top: 53px;
-     }
+    }
     @media (max-width:768px){
         padding-top: 153px;
+        padding-left: 10px;
+        padding-right: 21px;
 
     }
     
@@ -374,7 +422,7 @@ p{
     .box_wrapper{
         background-color: #fff;
         text-align: left;
-        padding:80px 50px;
+        padding:40px 50px;
         clip-path: polygon(8% 0%, 92% 0%, 100% 8%, 100% 92%, 92% 100%, 8% 100%, 0% 92%, 0% 8%);
         @media(max-width:1366px){
             margin:0;
@@ -382,6 +430,7 @@ p{
         }
         @media(max-width:1024px){
             padding: 36px;
+            clip-path: polygon(6% 0%, 94% 0%, 100% 5%, 100% 96%, 94% 100%, 7% 100%, 0% 96%, 0% 5%);
         }
        
         h3{
@@ -484,7 +533,7 @@ p{
         .full-width-agree{
             color:#000;
             font-family: 'lufgaregular';
-            font-size: 14px;
+            font-size: 12px;
             font-weight: 300;
             display:flex; 
             align-items: flex-start; 
@@ -498,13 +547,17 @@ p{
             
         .full-width-agree input[type="checkbox"]{
             display: grid;
+            
             place-content: center;
         }
         .full-width-agree input[type="checkbox"]::before {
         content: "";
-            width: 0.65em;
-            height: 0.65em;
+            // width: 0.65em;
+            // height: 0.65em;
+            width: 10px;
+            height: 10px;
             transform: scale(0);
+            border-radius: 0;
             transition: 120ms transform ease-in-out;
             box-shadow: inset 1em 1em var(--form-control-color);
         }
@@ -557,7 +610,7 @@ p{
                 font-size: 20px;
             }
             @media (max-width:767px){
-                font-size: 30px;
+                font-size: 25px;
             }
 
         }
@@ -589,6 +642,7 @@ p{
             @media (max-width:768px){
                 font-size: 10px;
                 padding: 20px 30px;
+               
              }
              
             
@@ -597,3 +651,27 @@ p{
 
 }
 
+
+.footer {
+
+    ul{
+        margin: 0;
+        li{
+            list-style: none;
+            display: inline;
+            padding:0 18px 0 0;
+            font-weight: 300;
+            a{
+                font-size: 16px;
+                color: #B3B3B3;
+            }
+        }
+    }
+
+    p{
+        color: #B3B3B3;
+        font-weight: 200;
+        font-size: 15px;
+    }
+
+}

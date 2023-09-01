@@ -16,9 +16,17 @@ h2 {
   font-family: "lufgaregular";
 }
 
+b {
+  font-family: "lufgasemibold";
+}
+
 h3 {
   font-family: "lufgaregular";
   font-size: 25px;
+}
+
+.box_p {
+  font-size: 12px;
 }
 
 h4 {
@@ -165,8 +173,8 @@ p {
 @media (max-width: 768px) {
   .fixed_header #main__header .header__wrapper .difc_logo {
     order: 2;
-    width: 60%;
-    text-align: center;
+    width: 100%;
+    text-align: left;
   }
 }
 .fixed_header #main__header .header__wrapper .difc_logo img {
@@ -184,7 +192,7 @@ p {
 @media (max-width: 768px) {
   .fixed_header #main__header .header__wrapper .main-menu {
     order: 1;
-    width: 20%;
+    width: 5%;
     text-align: left;
   }
 }
@@ -242,28 +250,25 @@ p {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  background-image: url(../images/bg-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 30px;
+  background-size: cover;
 }
 @media (max-width: 950px) {
   .difc_banner {
     padding-top: 53px;
+    margin-top: 0px;
   }
 }
 @media (max-width: 768px) {
   .difc_banner {
+    background-image: none;
+    background: url(../images/bg-1a.jpg);
     padding-top: 13px;
-  }
-}
-.difc_banner img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-}
-@media (max-width: 768px) {
-  .difc_banner img {
-    height: 100%;
+    height: 100vh;
+    background-position: inherit;
   }
 }
 .difc_banner .caption {
@@ -275,7 +280,8 @@ p {
 }
 @media (max-width: 768px) {
   .difc_banner .caption {
-    bottom: 10%;
+    bottom: 0%;
+    padding: 0 20px;
   }
 }
 .difc_banner .caption h1 {
@@ -290,7 +296,7 @@ p {
 }
 @media (max-width: 768px) {
   .difc_banner .caption h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 .difc_banner .caption h2 {
@@ -301,6 +307,11 @@ p {
 @media (max-width: 1366px) {
   .difc_banner .caption h2 {
     font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .difc_banner .caption h2 {
+    font-size: 14px;
   }
 }
 .difc_banner .caption .border-btn {
@@ -322,22 +333,60 @@ p {
 }
 @media (max-width: 768px) {
   .difc_banner .caption .border-btn {
-    font-size: 10px;
+    font-size: 17px;
     padding: 20px;
-    margin: 0 5px;
+    margin: 0;
+    width: 100%;
+    display: block;
   }
 }
-@media (max-width: 400px) {
-  .difc_banner .caption .border-btn {
-    font-size: 10px;
-    padding: 15px;
-    margin: 0 5px;
+
+.difc_banner_inner {
+  position: relative;
+}
+@media (max-width: 768px) {
+  .difc_banner_inner {
+    height: 300px;
   }
 }
-@media (max-width: 300px) {
-  .difc_banner .caption .border-btn {
-    font-size: 10px;
-    padding: 15px 45px;
+.difc_banner_inner img {
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+  .difc_banner_inner img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: right;
+       object-position: right;
+  }
+}
+.difc_banner_inner .caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 768px) {
+  .difc_banner_inner .caption {
+    padding: 20px;
+  }
+}
+.difc_banner_inner .caption h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 400;
+}
+@media (max-width: 1366px) {
+  .difc_banner_inner .caption h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .difc_banner_inner .caption h2 {
+    font-size: 17px;
   }
 }
 
@@ -345,7 +394,7 @@ p {
   padding: 150px 0;
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   background-image: url(../images/banner-1.jpg);
   background-position: center;
@@ -370,6 +419,8 @@ p {
 @media (max-width: 768px) {
   .difc_banner_step_2 {
     padding-top: 153px;
+    padding-left: 10px;
+    padding-right: 21px;
   }
 }
 .difc_banner_step_2 img {
@@ -399,7 +450,7 @@ p {
 .difc_banner_step_2 .box_wrapper {
   background-color: #fff;
   text-align: left;
-  padding: 80px 50px;
+  padding: 40px 50px;
   -webkit-clip-path: polygon(8% 0%, 92% 0%, 100% 8%, 100% 92%, 92% 100%, 8% 100%, 0% 92%, 0% 8%);
           clip-path: polygon(8% 0%, 92% 0%, 100% 8%, 100% 92%, 92% 100%, 8% 100%, 0% 92%, 0% 8%);
 }
@@ -412,6 +463,8 @@ p {
 @media (max-width: 1024px) {
   .difc_banner_step_2 .box_wrapper {
     padding: 36px;
+    -webkit-clip-path: polygon(6% 0%, 94% 0%, 100% 5%, 100% 96%, 94% 100%, 7% 100%, 0% 96%, 0% 5%);
+            clip-path: polygon(6% 0%, 94% 0%, 100% 5%, 100% 96%, 94% 100%, 7% 100%, 0% 96%, 0% 5%);
   }
 }
 .difc_banner_step_2 .box_wrapper h3 {
@@ -516,7 +569,7 @@ p {
 .difc_banner_step_2 .box_wrapper .full-width-agree {
   color: #000;
   font-family: "lufgaregular";
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 300;
   display: flex;
   align-items: flex-start;
@@ -534,9 +587,10 @@ p {
 }
 .difc_banner_step_2 .box_wrapper .full-width-agree input[type=checkbox]::before {
   content: "";
-  width: 0.65em;
-  height: 0.65em;
+  width: 10px;
+  height: 10px;
   transform: scale(0);
+  border-radius: 0;
   transition: 120ms transform ease-in-out;
   box-shadow: inset 1em 1em var(--form-control-color);
 }
@@ -591,7 +645,7 @@ p {
 }
 @media (max-width: 767px) {
   .difc_banner_thank_you .caption h2 {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 .difc_banner_thank_you .caption h6 {
@@ -626,4 +680,23 @@ p {
     font-size: 10px;
     padding: 20px 30px;
   }
+}
+
+.footer ul {
+  margin: 0;
+}
+.footer ul li {
+  list-style: none;
+  display: inline;
+  padding: 0 18px 0 0;
+  font-weight: 300;
+}
+.footer ul li a {
+  font-size: 16px;
+  color: #B3B3B3;
+}
+.footer p {
+  color: #B3B3B3;
+  font-weight: 200;
+  font-size: 15px;
 }/*# sourceMappingURL=main.css.map */
