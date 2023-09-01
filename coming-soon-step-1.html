@@ -52,43 +52,63 @@
 
         <div class="container caption">
 
-            <h2> YOUR GATEWAY TO AN <br>
-                ELEVATED LIFESTYLE </h2>
+
             <div class="row align-items-center">
                 <div class="col-md-5">
+                    <h2 class="text-center"> YOUR GATEWAY TO AN ELEVATED LIFESTYLE </h2>
                     <div class="box_wrapper">
 
                         <h3> REGISTER YOUR INTEREST</h3>
                         <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
                             method="POST">
-                            <div class="custom-interest-form"><input name="oid" type="hidden" value="0126M000000R67T" />
 
-                                <input name="retURL" type="hidden" value="" />
-
+                            <div class="custom-interest-form">
+                                <input type=hidden name="oid" value="00D20000000nkZ5">
+                                <input type=hidden name="retURL"
+                                    value="https://demolive.online/difc/comingsoon/thank-you.html">
                                 <input id="recordType" name="recordType" type="hidden" value=" 0126M000000R5y2 " />
-
-
                                 <div class="half-width"><input id="first_name" maxlength="40" name="first_name"
-                                        required="" size="20" type="text" placeholder="First Name" /></div>
+                                        required="required" size="20" type="text" placeholder="First Name*" /></div>
                                 <div class="half-width"><input id="last_name" maxlength="80" name="last_name"
-                                        required="" size="20" type="text" placeholder="Last Name" /></div>
+                                        required="required" size="20" type="text" placeholder="Last Name*" /></div>
+                                <div class="full-width"><input id="email" maxlength="80" name="email"
+                                        required="required" size="20" type="email" placeholder="Email*" /></div>
+                                <div class="full-width"><input id="mobile" maxlength="40" name="mobile"
+                                        required="required" size="20" type="text" placeholder="Mobile*" /></div>
+                                <div class="full-width-agree"><label for="agree">* Mandatory field</label></div>
+                                <div class="full-width-agree">
 
-
-                                <div class="full-width"><input id="mobile" maxlength="40" name="mobile" required=""
-                                        size="20" type="text" placeholder="Mobile" /></div>
-
-                                <div class="full-width"><input id="email" maxlength="80" name="email" required=""
-                                        size="20" type="email" placeholder="Email" /></div>
-
-                                <div class="full-width-agree"><input id="agree" name="agree" required="required"
-                                        type="checkbox" />
-                                    <label for="agree"> I agree to share my data with DIFC and its affiliates. </label>
+                                    <span class="box_p">All Personal Data you provide through the DIFC website will be
+                                        processed in
+                                        accordance with the <a href="online-data-protection-policy.html"> DIFC Online
+                                            Data
+                                            Protection Policy.</a> In addition to using
+                                        your
+                                        information to contact you for the purposes set out therein, we may contact you
+                                        about other services and products of interest to you and may share it with third
+                                        parties for the such purposes, if you permit us to do so. Please tick the
+                                        appropriate box below to confirm that you provide your permission:</span>
+                                </div>
+                                <div class="full-width-agree">
+                                    <input id="00N6M00000AUXrd" name="00N6M00000AUXrd" required="required"
+                                        type="checkbox" value="1" />
+                                    <label for="00N6M00000AUXrd"> For DIFC to contact
+                                        you as requested or to tell you about additional services and products </label>
                                 </div>
 
+                                <div class="full-width-agree">
+                                    <input id="00N6M00000AUXrd" name="00N6M00000AUXrd" required="required"
+                                        type="checkbox" value="2" />
+                                    <label for="00N6M00000AUXrd"> For third parties and
+                                        affiliates to receive your information from DIFC </label>
+                                </div>
+
+                                <input type=hidden name="lead_source" value="DIFC Affiliate">
+                                <input type=hidden name="00N0J00000A2SQJ" value="DIFC Living">
+                                <input type=hidden name="recordType" id="recordType" value="0126M000000R67T">
                                 <div class="full-width"><input name="submit" type="submit" /></div>
                             </div>
                         </form>
-
                     </div>
                 </div>
                 <div class="col-md-6"></div>
@@ -97,6 +117,32 @@
         </div>
     </div>
 
+
+    <!-- START FOOTER -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="pt-25"></div>
+                <ul>
+                    <li><a href="terms-us.html"> Terms of Use </a> </li>
+                    <li><a href="online-data-protection-policy.html"> Online Data Protection Policy </a> </li>
+                    <li><a href="information-security.html"> Information Security</a> </li>
+                </ul>
+
+
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-9">
+                    <p> Copyright © 2023 DIFC. All rights reserved. </p>
+                </div>
+                <div class="col-md-4">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
